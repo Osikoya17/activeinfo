@@ -20,4 +20,4 @@ app.get('/',(req:Request,res:Response,next:NextFunction)=>{
 })
 app.use(router)
 
-const server:Server = app.listen(PORT || 4000 ,()=>console.log(`App is running on port ${PORT}`))
+const server:Server = app.listen(process.env.PORT || PORT || 4000 ,()=>console.log(`App is running on port ${PORT}`))
