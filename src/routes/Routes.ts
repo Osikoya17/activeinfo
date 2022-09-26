@@ -10,7 +10,7 @@ const router = Router()
 
 router.post('/upload',upload.single("image"),Upload)
 router.post('/signup',Signup)
-router.post('/login',[auth],Login)
+router.post('/login',Login)
 router.post('/delete',Delete)
 router.get('/blog-post',Blogs)
 
