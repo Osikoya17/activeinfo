@@ -9,6 +9,7 @@ export const handleError = (err:any)=>{
     console.log(err.message,err.code);
     if (err.code === 11000 ){
         errors.email = "Email is Already Registerted"
+        errors.username="Username Already in Use"
         return errors
     }
     if(err.message.includes("user validation failed: password")){
