@@ -19,7 +19,7 @@ export const Signup = async(req:Request,res:Response) =>{
             password
         })
         const token = createToken(users._id)
-        res.status(201).json({user:users._id})
+        res.status(201).json({user:users._id,token:token,users:users})
     } catch (error) {
         const errors = handleError(error)
         res.status(400).json({errors})
