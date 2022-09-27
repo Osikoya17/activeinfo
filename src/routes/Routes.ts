@@ -5,7 +5,7 @@ import {Login} from "../controllers/loginController"
 import {Blogs} from "../controllers/blogController"
 import {Delete} from "../controllers/deleteController"
 import { upload } from "../middleware/upload"
-import {auth} from "../middleware/auth"
+// import {auth} from "../middleware/auth"
 const router = Router()
 
 router.post('/upload',upload.single("image"),Upload)
