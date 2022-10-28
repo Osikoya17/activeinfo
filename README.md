@@ -5,10 +5,6 @@ But it is being hosted On Render.com
 https://active-info.onrender.com 
 
 
-
-
-
-
  METHODS       ROUTES
 
   GET        /blog-post
